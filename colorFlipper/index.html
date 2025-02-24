@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color flipper</title>
+    
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!--    document.getElementById()
+            document.body.style.backgroundColor
+            Math.floor()
+            Math.random()
+        --> 
+
+    <p id="displayColor">Next color</p>
+    <button id="changeColorButton" onclick="changeColor()">CLick me</button>
+
+
+    <script>
+        const displayColor = document.getElementById('displayColor')
+        const body = document.body
+
+        function changeColor() {
+            let newColor = '#' + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0') // min 6 caracteres, sino rellena con "0" al start
+            body.style.backgroundColor = newColor
+            displayColor.innerHTML = `The color is: ${newColor}`
+        }
+
+    </script>
+</body>
+</html>
