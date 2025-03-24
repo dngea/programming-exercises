@@ -1,0 +1,57 @@
+nav {
+  border: 1px solid black;
+  padding: 20px;
+}
+.nav-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+button{
+  background-color: transparent;
+  border: none;
+  opacity: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+button:hover{
+  opacity: 80%;
+}
+.rotate{
+  transform: rotate(-90deg);
+}
+
+
+.links{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+  transition: all 0.2s ease-in-out;
+}
+
+.show-links{
+  visibility: visible;
+  height: 120px;
+}
+
+@media (width > 600px) {
+  .toggle{
+    display: none;
+  }
+
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  .links{
+    flex-direction: row;
+    height: auto;
+  }
+}
