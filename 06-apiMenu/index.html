@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <main>
+  <h3>Filtrar por:</h3>
+  <!-- Búsqueda por nombre -->
+  <input type="text" id="meal-name" placeholder="Buscar por nombre..." />
+  <button id="search-meal-btn">Buscar</button>
+  
+  <!-- Categoría -->
+  <select id="meal-category">
+    <option value="">Seleccione una categoría</option>
+    <option value="Seafood">Mariscos</option>
+    <option value="Dessert">Postres</option>
+    <option value="Vegetarian">Vegetariano</option>
+  </select>
+  <button onclick="filterByCategory()">Filtrar</button>
+
+  <!-- Area -->
+  <select id="meal-area">
+    <option value="">Seleccione un área</option>
+    <option value="Canadian">Canadiense</option>
+    <option value="Italian">Italiana</option>
+  </select>
+  <button onclick="filterByArea()">Filtrar</button>
+
+  <!-- Ingrediente -->
+  <input type="text" id="meal-ingredient" placeholder="Filtrar por ingrediente..." />
+  <button onclick="filterByIngredient()">Filtrar</button>
+
+<section class="content"></section>
+
+</main>
+
+
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+dialog::backdrop {
+  background-image: linear-gradient(
+    45deg,
+    rgb(208, 201, 199),
+    rgb(142, 140, 145),
+    rgb(134, 138, 143),
+    rgb(214, 206, 206)
+  );
+  opacity: 0.75;
+}
