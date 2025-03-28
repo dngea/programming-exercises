@@ -1,0 +1,43 @@
+body{
+  border: 1px solid red;
+  box-sizing: border-box;
+}
+.caja1{
+  background-color: chocolate;
+  height: 120vh;
+  width: 100%;
+}
+.caja2{
+  background-color: rgb(121, 68, 29);
+  height: 120vh;
+  width: 100%;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  border: 1px solid black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(255, 247, 242);
+  transition: transform 0.3s ease-in;
+}
+
+.nav-hide{
+  transform: translateY(-100px);
+}
+
+.links{
+  display: flex;
+  align-items: center;
+}
+
+ul{
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
